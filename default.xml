@@ -11,24 +11,28 @@
            name="caf"
            review="codeaurora.org"/>
 
+    <remote  name="freak"
+           fetch="https://github.com/FreakRoms"
+           revision="7.1.1" />
+  
   <remote  name="ex"
            fetch="https://github.com/AospExtended"
            revision="7.1.1" />
   
-  <remote  name="aex-devices"
+  <remote  name="FreakRoms-devices"
            fetch="https://github.com/AospExtended-Devices"
            revision="7.1.1" />
 
   <default revision="refs/tags/android-7.1.1_r25"
            remote="aosp"
            sync-c="true"
-           sync-j="4" />
+           sync-j="8" />
 
  <!-- AospExtended -->
   <project name="platform_build" path="build" groups="pdk,tradefed" remote="ex" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="vendor/aosp" name="platform_vendor_aosp" remote="ex" />
+  <project path="vendor/aosp" name="platform_vendor_aosp" remote="freak" />
   <project path="packages/apps/Settings" name="platform_packages_apps_Settings" groups="pdk-fs" remote="ex" />
   <project path="packages/apps/Extensions" name="platform_packages_apps_Extensions" groups="pdk-fs" remote="ex" />
   <project path="packages/apps/AEXOTA" name="platform_packages_apps_AEXOTA" groups="pdk-fs" remote="ex" />
