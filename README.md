@@ -2,11 +2,11 @@
 How to Build?
 -------------
 
-To initialize your local repository using the AospExtended trees, use a 
+To initialize your local repository using the Freak trees, use a 
 command like this:
 
 ```bash
-  repo init -u git://github.com/AospExtended/manifest.git -b 7.x
+  repo init -u git://github.com/FreakRoms/manifest.git -b 7.1.1
 ```
   
 Then to sync up:
