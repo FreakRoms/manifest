@@ -29,14 +29,13 @@
            sync-j="8" />
 
  <!-- AospExtended -->
-  <project name="platform_build" path="build" groups="pdk,tradefed" remote="ex" >
+  <project name="platform_build" path="build" groups="pdk,tradefed" remote="freak" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="vendor/aosp" name="platform_vendor_aosp" remote="freak" />
   <project path="packages/apps/Settings" name="platform_packages_apps_Settings" groups="pdk-fs" remote="freak" />
   <project path="packages/apps/Freakify" name="platform_packages_apps_Freakify" groups="pdk-fs" remote="freak" />
   <project path="packages/apps/AEXOTA" name="platform_packages_apps_AEXOTA" groups="pdk-fs" remote="ex" />
-  <project path="packages/apps/AEXPapers" name="platform_packages_apps_AEXPapers" groups="pdk-fs" remote="ex" />
   <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="ex" />
   <project path="hardware/libhardware" name="platform_hardware_libhardware" groups="pdk-fs" remote="ex" />
   <project path="frameworks/native" name="platform_frameworks_native" groups="pdk" remote="ex" />
